@@ -24,7 +24,7 @@ $susy: (
   ),
 );
 
-$wrapper-width: 1600px;
+$wrapper-width: 940px;
 
 /*********************
 IMPORTING PARTIALS
@@ -83,6 +83,8 @@ need to have all the breakpoint files.
 @import "chunks/page-navi";
 @import "chunks/sidebars";
 @import "chunks/footer";
+@import "chunks/unslider";
+@import "chunks/featured";
 
 /*********************
 PRINT STYLESHEET

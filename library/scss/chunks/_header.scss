@@ -3,12 +3,22 @@ HEADER STYLES
 *********************/
 
 .header {
+	background-color: $black;
 }
 
-  #logo {
-    margin: 0.75em 0;
+.inner-header{
+	@include container($wrapper-width);
+	color: $white;
+}
 
-    a {
-      color: $black;
-    }
+#logo {
+  margin: 0.75em 0;
+  font-weight: 900;
+  font-size: 30px;
+  @include span( first 3 of 12 );
+
+  a {
+    color: $white;
   }
+}
+

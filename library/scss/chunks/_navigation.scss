@@ -14,22 +14,22 @@ and more scalable.
 .nav {
   border-bottom: 0;
   margin: 0;
+  text-align: right;
+
+  @include span(last 9 of 12);
 
   li {
+    display: inline-block;
+    position: relative;
 
     a {
       display: block;
       text-decoration: none;
       padding: 0.75em;
+      color: $white;
 
-      /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */
       &:hover, &:focus {
-
+        
       }
     }
 
@@ -46,6 +46,11 @@ and more scalable.
     */
     ul.sub-menu,
     ul.children {
+      display: none;
+      position: absolute;
+      bottom: -100%;
+      right: 0;
+      width: 200px;
 
       li {
 
