@@ -1553,7 +1553,8 @@ FOOTER STYLES
   .module.recent-activity li {
     padding: 15px;
     background-color: #F7F7F7;
-    position: relative; }
+    position: relative;
+    margin-bottom: 20px; }
     .module.recent-activity li i.fa {
       position: absolute;
       top: 20px;
